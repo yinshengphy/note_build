@@ -1,0 +1,25 @@
+version: "3"
+services:
+  nginx:
+    build: nginx
+    container_name: nginx_ssl
+    hostname: nginx
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - app_root:/usr/share/nginx/html
+  jenkins:
+    build: jenkins
+    container_name: jenkins4note
+    hostname: jenkins
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - app_root:/var/approot
+#      - jenkins_home:/var/jenkins_home
+volumes:
+  app_root:
+#  jenkins_home:
