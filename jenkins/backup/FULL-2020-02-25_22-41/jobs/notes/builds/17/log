@@ -1,0 +1,36 @@
+Started by GitHub push by yinshengphy
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/notes
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yinshengphy/notes.git # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/notes.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/yinshengphy/notes.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e3ad60391589af07102452f1ea1e3ad38d04dc9c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e3ad60391589af07102452f1ea1e3ad38d04dc9c # timeout=10
+Commit message: "测试发布"
+ > git rev-list --no-walk e07f9d0fbf643ada9acd3d3752249bed7262aa7e # timeout=10
+[notes] $ /bin/sh -xe /tmp/jenkins1449647754090318976.sh
++ npm install -g gitbook-cli
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/bin/gitbook -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/gitbook-cli/bin/gitbook.js
++ gitbook-cli@2.3.2
+updated 3 packages in 13.248s
++ gitbook build
+[0;36minfo:[0m 7 plugins are installed 
+[0;36minfo:[0m 6 explicitly listed 
+[0;36minfo:[0m loading plugin "highlight"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "search"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "lunr"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "sharing"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "fontsettings"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "theme-default"... [0;32mOK[0m 
+[0;36minfo:[0m found 6 pages 
+[0;36minfo:[0m found 0 asset files 
+[0;36minfo:[0m [0;32m>> [0mgeneration finished with success in 1.5s ! 
++ cp -r /var/jenkins_home/workspace/notes/_book/bi-ji /var/jenkins_home/workspace/notes/_book/gitbook /var/jenkins_home/workspace/notes/_book/index.html /var/jenkins_home/workspace/notes/_book/search_index.json /var/jenkins_home/workspace/notes/_book/sui-bi /var/approot
+Finished: SUCCESS

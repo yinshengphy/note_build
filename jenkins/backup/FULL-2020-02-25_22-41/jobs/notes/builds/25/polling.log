@@ -1,0 +1,11 @@
+Started on Feb 20, 2020 6:53:12 AM
+Started by event from 192.30.252.98 ⇒ http://114.67.85.58:8080/github-webhook/ on Thu Feb 20 06:53:12 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 2abd319a2d9c05fb080b11b389186442df218af6 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/yinshengphy/notes.git # timeout=10
+Found 1 remote heads on https://github.com/yinshengphy/notes.git
+[poll] Latest remote head revision on refs/heads/master is: 0ad015f38912b47b653cffa9464a463e0e3fd785
+Done. Took 2 sec
+Changes found

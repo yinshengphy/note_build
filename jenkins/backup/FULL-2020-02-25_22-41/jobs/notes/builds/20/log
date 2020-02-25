@@ -1,0 +1,177 @@
+Started by user [8mha:////4J6AtgoescyDw8Vhb4fJ2Bm6TgASYjeKuwrpYFcoO1zXAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9ysy84gyg4QUZlQA6/aJlxgAAAA==[0myinshengphy
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/notes
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yinshengphy/notes.git # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/notes.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/yinshengphy/notes.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 23d80baa74f004551357180058d6b2d24574c28d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23d80baa74f004551357180058d6b2d24574c28d # timeout=10
+Commit message: "book.json测试"
+ > git rev-list --no-walk 23d80baa74f004551357180058d6b2d24574c28d # timeout=10
+[notes] $ /bin/sh -xe /tmp/jenkins7973193457078155401.sh
++ npm install -g gitbook-cli
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/bin/gitbook -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/gitbook-cli/bin/gitbook.js
++ gitbook-cli@2.3.2
+updated 3 packages in 23.825s
++ gitbook install
+[0;36minfo:[0m installing 9 plugins using npm@3.9.2 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "splitter" 
+[0;36minfo:[0m install plugin "splitter" (*) from NPM with version 0.0.8 
+/var/jenkins_home/workspace/notes
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "splitter" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "expandable-chapters-small" 
+[0;36minfo:[0m install plugin "expandable-chapters-small" (*) from NPM with version 0.1.7 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "expandable-chapters-small" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "anchors" 
+[0;36minfo:[0m install plugin "anchors" (*) from NPM with version 0.7.1 
+/var/jenkins_home/workspace/notes
+├─┬ gitbook-plugin-anchors@0.7.1 
+│ ├─┬ cheerio@0.22.0 
+│ │ ├─┬ css-select@1.2.0 
+│ │ │ ├── boolbase@1.0.0 
+│ │ │ ├── css-what@2.1.3 
+│ │ │ ├── domutils@1.5.1 
+│ │ │ └── nth-check@1.0.2 
+│ │ ├─┬ dom-serializer@0.1.1 
+│ │ │ └── domelementtype@1.3.1 
+│ │ ├── entities@1.1.2 
+│ │ ├─┬ htmlparser2@3.10.1 
+│ │ │ ├── domhandler@2.4.2 
+│ │ │ ├── inherits@2.0.4 
+│ │ │ └─┬ readable-stream@3.6.0 
+│ │ │   ├─┬ string_decoder@1.3.0 
+│ │ │   │ └── safe-buffer@5.2.0 
+│ │ │   └── util-deprecate@1.0.2 
+│ │ ├── lodash.assignin@4.2.0 
+│ │ ├── lodash.bind@4.2.1 
+│ │ ├── lodash.defaults@4.2.0 
+│ │ ├── lodash.filter@4.6.0 
+│ │ ├── lodash.flatten@4.4.0 
+│ │ ├── lodash.foreach@4.5.0 
+│ │ ├── lodash.map@4.6.0 
+│ │ ├── lodash.merge@4.6.2 
+│ │ ├── lodash.pick@4.4.0 
+│ │ ├── lodash.reduce@4.6.0 
+│ │ ├── lodash.reject@4.6.0 
+│ │ └── lodash.some@4.6.0 
+│ └── github-slugid@1.0.1 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "anchors" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "github" 
+[0;36minfo:[0m install plugin "github" (*) from NPM with version 2.0.0 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-github@2.0.0 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "github" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "github-buttons" 
+[0;36minfo:[0m install plugin "github-buttons" (*) from NPM with version 3.0.0 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-github@2.0.0 
+├── gitbook-plugin-github-buttons@3.0.0 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "github-buttons" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "donate" 
+[0;36minfo:[0m install plugin "donate" (*) from NPM with version 1.0.2 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-donate@1.0.2 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-github@2.0.0 
+├── gitbook-plugin-github-buttons@3.0.0 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "donate" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "sharing-plus" 
+[0;36minfo:[0m install plugin "sharing-plus" (*) from NPM with version 0.0.2 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-donate@1.0.2 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-github@2.0.0 
+├── gitbook-plugin-github-buttons@3.0.0 
+├─┬ gitbook-plugin-sharing-plus@0.0.2 
+│ └── lodash@3.10.1 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "sharing-plus" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "anchor-navigation-ex" 
+[0;36minfo:[0m install plugin "anchor-navigation-ex" (*) from NPM with version 1.0.14 
+/var/jenkins_home/workspace/notes
+├─┬ gitbook-plugin-anchor-navigation-ex@1.0.14 
+│ └── colors@1.4.0 
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-donate@1.0.2 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-github@2.0.0 
+├── gitbook-plugin-github-buttons@3.0.0 
+├── gitbook-plugin-sharing-plus@0.0.2 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "anchor-navigation-ex" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "favicon" 
+[0;36minfo:[0m install plugin "favicon" (*) from NPM with version 0.0.2 
+/var/jenkins_home/workspace/notes
+├── gitbook-plugin-anchor-navigation-ex@1.0.14 
+├── gitbook-plugin-anchors@0.7.1 
+├── gitbook-plugin-donate@1.0.2 
+├── gitbook-plugin-expandable-chapters-small@0.1.7 
+├── gitbook-plugin-favicon@0.0.2 
+├── gitbook-plugin-github@2.0.0 
+├── gitbook-plugin-github-buttons@3.0.0 
+├── gitbook-plugin-sharing-plus@0.0.2 
+└── gitbook-plugin-splitter@0.0.8 
+
+[0;36minfo:[0m [0;32m>> [0mplugin "favicon" installed with success 
++ gitbook build
+[0;36minfo:[0m 16 plugins are installed 
+[0;36minfo:[0m 14 explicitly listed 
+[0;36minfo:[0m loading plugin "splitter"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "expandable-chapters-small"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "anchors"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "github"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "github-buttons"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "donate"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "sharing-plus"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "anchor-navigation-ex"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "favicon"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "highlight"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "search"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "lunr"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "fontsettings"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "theme-default"... [0;32mOK[0m 
+[0;36minfo:[0m found 6 pages 
+[0;36minfo:[0m found 0 asset files 
+[0;36minfo:[0m [0;32m>> [0mgeneration finished with success in 2.0s ! 
++ rm -rf /var/approot/bi-ji /var/approot/gitbook /var/approot/index.html /var/approot/search_index.json /var/approot/sui-bi
++ cp -r /var/jenkins_home/workspace/notes/_book/bi-ji /var/jenkins_home/workspace/notes/_book/gitbook /var/jenkins_home/workspace/notes/_book/index.html /var/jenkins_home/workspace/notes/_book/search_index.json /var/jenkins_home/workspace/notes/_book/sui-bi /var/approot
+Finished: SUCCESS

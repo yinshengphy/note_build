@@ -1,0 +1,58 @@
+Started by GitHub push by yinshengphy
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/notes
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yinshengphy/notes.git # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/notes.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/yinshengphy/notes.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c5d36dffff43204c10895fbc1d9a1896f6c196a0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c5d36dffff43204c10895fbc1d9a1896f6c196a0 # timeout=10
+Commit message: "测试分页"
+ > git rev-list --no-walk 0ad015f38912b47b653cffa9464a463e0e3fd785 # timeout=10
+[notes] $ /bin/sh -xe /tmp/jenkins3264349310689485301.sh
++ npm install -g gitbook-cli
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/bin/gitbook -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/gitbook-cli/bin/gitbook.js
++ gitbook-cli@2.3.2
+updated 3 packages in 19.571s
++ gitbook install
+[0;36minfo:[0m installing 4 plugins using npm@3.9.2 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "sharing" 
+[0;36minfo:[0m install plugin "sharing" (*) from NPM with version 1.0.2 
+[0;36minfo:[0m [0;32m>> [0mplugin "sharing" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "github" 
+[0;36minfo:[0m install plugin "github" (*) from NPM with version 2.0.0 
+[0;36minfo:[0m [0;32m>> [0mplugin "github" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "github-buttons" 
+[0;36minfo:[0m install plugin "github-buttons" (*) from NPM with version 3.0.0 
+[0;36minfo:[0m [0;32m>> [0mplugin "github-buttons" installed with success 
+[0;36minfo:[0m  
+[0;36minfo:[0m installing plugin "favicon" 
+[0;36minfo:[0m install plugin "favicon" (*) from NPM with version 0.0.2 
+[0;36minfo:[0m [0;32m>> [0mplugin "favicon" installed with success 
++ gitbook build
+[0;36minfo:[0m 16 plugins are installed 
+[0;36minfo:[0m 10 explicitly listed 
+[0;36minfo:[0m loading plugin "sharing"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "github"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "github-buttons"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "favicon"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "highlight"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "search"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "lunr"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "fontsettings"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "theme-default"... [0;32mOK[0m 
+[0;36minfo:[0m found 6 pages 
+[0;36minfo:[0m found 3 asset files 
+[0;36minfo:[0m [0;32m>> [0mgeneration finished with success in 1.5s ! 
++ rm -rf /var/approot/bi-ji /var/approot/gitbook /var/approot/index.html /var/approot/search_index.json /var/approot/static /var/approot/sui-bi
++ cp -r /var/jenkins_home/workspace/notes/_book/bi-ji /var/jenkins_home/workspace/notes/_book/gitbook /var/jenkins_home/workspace/notes/_book/index.html /var/jenkins_home/workspace/notes/_book/search_index.json /var/jenkins_home/workspace/notes/_book/static /var/jenkins_home/workspace/notes/_book/sui-bi /var/approot
+Finished: SUCCESS
