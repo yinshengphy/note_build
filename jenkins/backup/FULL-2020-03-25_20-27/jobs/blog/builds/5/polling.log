@@ -1,0 +1,11 @@
+Started on Mar 25, 2020 5:24:24 PM
+Started by event from 140.82.115.246 ⇒ http://114.67.85.58:8080/github-webhook/ on Wed Mar 25 17:24:24 CST 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision b78d1e9403a952e4bf0ddd6161a896f9d3c7533c (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/yinshengphy/blog.git # timeout=10
+Found 1 remote heads on https://github.com/yinshengphy/blog.git
+[poll] Latest remote head revision on refs/heads/master is: d7cea8414d932d2dedcaf352e8001980e79d9622
+Done. Took 1.1 sec
+Changes found

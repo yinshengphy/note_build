@@ -1,0 +1,36 @@
+Started by user [8mha:////4E0yygkobbR7UhyZmAGiYnWY8trQxZNy3yxwRrG+s6LyAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9ysy84gyg4QUZlQA6/aJlxgAAAA==[0myinshengphy
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/blog
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/yinshengphy/blog.git
+ > git init /var/jenkins_home/workspace/blog # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/blog.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/yinshengphy/blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/yinshengphy/blog.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/yinshengphy/blog.git # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/blog.git
+ > git fetch --tags --progress -- https://github.com/yinshengphy/blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9d4509864562ffba26c71705697a4ef57839e689 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9d4509864562ffba26c71705697a4ef57839e689 # timeout=10
+Commit message: "initial"
+First time build. Skipping changelog.
+[blog] $ /bin/sh -xe /tmp/jenkins4103951831136637497.sh
++ npm install -g hexo-cli
+npm WARN deprecated mkdirp@0.5.4: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/bin/hexo -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/hexo-cli/bin/hexo
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/hexo-cli/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ hexo-cli@3.1.0
+added 81 packages from 322 contributors in 91.977s
++ hexo generate
+ERROR Local hexo not found in ~/workspace/blog
+ERROR Try running: 'npm install hexo --save'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

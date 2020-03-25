@@ -1,0 +1,84 @@
+Started by GitHub push by yinshengphy
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/blog
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yinshengphy/blog.git # timeout=10
+Fetching upstream changes from https://github.com/yinshengphy/blog.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/yinshengphy/blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b78d1e9403a952e4bf0ddd6161a896f9d3c7533c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b78d1e9403a952e4bf0ddd6161a896f9d3c7533c # timeout=10
+Commit message: "更新"
+ > git rev-list --no-walk 9d4509864562ffba26c71705697a4ef57839e689 # timeout=10
+[blog] $ /bin/sh -xe /tmp/jenkins6455091837167575997.sh
++ npm install -g hexo-cli
+npm WARN deprecated mkdirp@0.5.4: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/bin/hexo -> /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/hexo-cli/bin/hexo
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/hexo-cli/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ hexo-cli@3.1.0
+updated 1 package in 15.263s
++ npm install hexo
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ hexo@4.2.0
+updated 1 package and audited 504 packages in 23.54s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
++ npm install
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 504 packages in 3.253s
+
+5 packages are looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
++ hexo generate
+INFO  =======================================
+ ██╗ ██████╗ █████╗ ██████╗ ██╗   ██╗███████╗
+ ██║██╔════╝██╔══██╗██╔══██╗██║   ██║██╔════╝
+ ██║██║     ███████║██████╔╝██║   ██║███████╗
+ ██║██║     ██╔══██║██╔══██╗██║   ██║╚════██║
+ ██║╚██████╗██║  ██║██║  ██║╚██████╔╝███████║
+ ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+=============================================
+INFO  Checking dependencies
+INFO  Validating the configuration file
+INFO  Start processing
+INFO  Files loaded in 176 ms
+INFO  Generated: content.json
+INFO  Generated: 随笔/安全/rsa/index.html
+INFO  Generated: archives/index.html
+INFO  Generated: Diary/hello-world/index.html
+INFO  Generated: archives/2020/index.html
+INFO  Generated: archives/2020/03/index.html
+INFO  Generated: categories/Diary/index.html
+INFO  Generated: categories/随笔/index.html
+INFO  Generated: categories/随笔/安全/index.html
+INFO  Generated: tags/PS3/index.html
+INFO  Generated: index.html
+INFO  Generated: tags/Games/index.html
+INFO  Generated: tags/密码学/index.html
+INFO  Generated: tags/RSA/index.html
+INFO  Generated: categories/index.html
+INFO  Generated: tags/数论/index.html
+INFO  Generated: tags/index.html
+INFO  17 files generated in 171 ms
++ mkdir -p /var/approot/blog
++ rm -rf /var/approot/blog/Diary /var/approot/blog/archives /var/approot/blog/assets /var/approot/blog/categories /var/approot/blog/content.json /var/approot/blog/css /var/approot/blog/images /var/approot/blog/index.html /var/approot/blog/js /var/approot/blog/tags /var/approot/blog/随笔
++ cp -r /var/jenkins_home/workspace/blog/public/Diary /var/jenkins_home/workspace/blog/public/archives /var/jenkins_home/workspace/blog/public/assets /var/jenkins_home/workspace/blog/public/categories /var/jenkins_home/workspace/blog/public/content.json /var/jenkins_home/workspace/blog/public/css /var/jenkins_home/workspace/blog/public/images /var/jenkins_home/workspace/blog/public/index.html /var/jenkins_home/workspace/blog/public/js /var/jenkins_home/workspace/blog/public/tags /var/jenkins_home/workspace/blog/public/随笔 /var/approot/blog
+Finished: SUCCESS

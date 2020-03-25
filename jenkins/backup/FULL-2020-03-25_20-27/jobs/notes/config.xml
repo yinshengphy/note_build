@@ -4,7 +4,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -36,8 +36,9 @@
                 npm install -g gitbook-cli
                 gitbook install
                 gitbook build
-                rm -rf /var/approot/*
-                cp -r /var/jenkins_home/workspace/notes/_book/* /var/approot
+                mkdir -p /var/approot/note
+                rm -rf /var/approot/note/*
+                cp -r /var/jenkins_home/workspace/notes/_book/* /var/approot/note
             </command>
     </hudson.tasks.Shell>
   </builders>

@@ -19,7 +19,7 @@
     </entry>
     <entry>
       <string>trilead-api</string>
-      <string>1.0.5</string>
+      <string>1.0.6</string>
     </entry>
     <entry>
       <string>workflow-multibranch</string>
@@ -27,6 +27,14 @@
     </entry>
     <entry>
       <string>docker-workflow</string>
+      <string>1.23</string>
+    </entry>
+    <entry>
+      <string>pipeline-stage-tags-metadata</string>
+      <string>1.6.0</string>
+    </entry>
+    <entry>
+      <string>ldap</string>
       <string>1.21</string>
     </entry>
     <entry>
@@ -34,16 +42,8 @@
       <string>1.1.1</string>
     </entry>
     <entry>
-      <string>ldap</string>
-      <string>1.21</string>
-    </entry>
-    <entry>
-      <string>pipeline-stage-tags-metadata</string>
-      <string>1.5.1</string>
-    </entry>
-    <entry>
       <string>git-client</string>
-      <string>3.1.1</string>
+      <string>3.2.1</string>
     </entry>
     <entry>
       <string>scm-api</string>
@@ -54,12 +54,12 @@
       <string>2.3</string>
     </entry>
     <entry>
-      <string>email-ext</string>
-      <string>2.68</string>
+      <string>pipeline-model-extensions</string>
+      <string>1.6.0</string>
     </entry>
     <entry>
-      <string>pipeline-model-extensions</string>
-      <string>1.5.1</string>
+      <string>email-ext</string>
+      <string>2.69</string>
     </entry>
     <entry>
       <string>github</string>
@@ -71,7 +71,7 @@
     </entry>
     <entry>
       <string>workflow-cps-global-lib</string>
-      <string>2.15</string>
+      <string>2.16</string>
     </entry>
     <entry>
       <string>workflow-support</string>
@@ -83,11 +83,11 @@
     </entry>
     <entry>
       <string>antisamy-markup-formatter</string>
-      <string>1.8</string>
+      <string>2.0</string>
     </entry>
     <entry>
       <string>jackson2-api</string>
-      <string>2.10.2</string>
+      <string>2.10.3</string>
     </entry>
     <entry>
       <string>pipeline-rest-api</string>
@@ -103,19 +103,15 @@
     </entry>
     <entry>
       <string>pipeline-model-api</string>
-      <string>1.5.1</string>
+      <string>1.6.0</string>
     </entry>
     <entry>
       <string>token-macro</string>
-      <string>2.11</string>
+      <string>2.12</string>
     </entry>
     <entry>
       <string>publish-over-ssh</string>
       <string>1.20.1</string>
-    </entry>
-    <entry>
-      <string>lockable-resources</string>
-      <string>2.7</string>
     </entry>
     <entry>
       <string>thinBackup</string>
@@ -126,20 +122,24 @@
       <string>2.11</string>
     </entry>
     <entry>
-      <string>momentjs</string>
-      <string>1.1.1</string>
+      <string>lockable-resources</string>
+      <string>2.7</string>
     </entry>
     <entry>
       <string>git-server</string>
       <string>1.9</string>
     </entry>
     <entry>
-      <string>localization-zh-cn</string>
-      <string>1.0.13</string>
+      <string>momentjs</string>
+      <string>1.1.1</string>
     </entry>
     <entry>
       <string>credentials-binding</string>
       <string>1.21</string>
+    </entry>
+    <entry>
+      <string>localization-zh-cn</string>
+      <string>1.0.13</string>
     </entry>
     <entry>
       <string>workflow-aggregator</string>
@@ -151,15 +151,15 @@
     </entry>
     <entry>
       <string>pipeline-build-step</string>
-      <string>2.11</string>
+      <string>2.12</string>
     </entry>
     <entry>
       <string>credentials</string>
-      <string>2.3.1</string>
+      <string>2.3.5</string>
     </entry>
     <entry>
       <string>pipeline-model-definition</string>
-      <string>1.5.1</string>
+      <string>1.6.0</string>
     </entry>
     <entry>
       <string>config-file-provider</string>
@@ -194,24 +194,24 @@
       <string>2.18</string>
     </entry>
     <entry>
-      <string>ace-editor</string>
-      <string>1.1</string>
-    </entry>
-    <entry>
       <string>jquery-detached</string>
       <string>1.2.1</string>
-    </entry>
-    <entry>
-      <string>pam-auth</string>
-      <string>1.6</string>
     </entry>
     <entry>
       <string>docker-commons</string>
       <string>1.16</string>
     </entry>
     <entry>
+      <string>ace-editor</string>
+      <string>1.1</string>
+    </entry>
+    <entry>
+      <string>pam-auth</string>
+      <string>1.6</string>
+    </entry>
+    <entry>
       <string>git</string>
-      <string>4.1.1</string>
+      <string>4.2.2</string>
     </entry>
     <entry>
       <string>authentication-tokens</string>
@@ -231,15 +231,15 @@
     </entry>
     <entry>
       <string>durable-task</string>
-      <string>1.33</string>
-    </entry>
-    <entry>
-      <string>workflow-job</string>
-      <string>2.36</string>
+      <string>1.34</string>
     </entry>
     <entry>
       <string>workflow-basic-steps</string>
       <string>2.19</string>
+    </entry>
+    <entry>
+      <string>workflow-job</string>
+      <string>2.37</string>
     </entry>
     <entry>
       <string>jsch</string>
@@ -247,7 +247,7 @@
     </entry>
     <entry>
       <string>timestamper</string>
-      <string>1.11</string>
+      <string>1.11.2</string>
     </entry>
     <entry>
       <string>github-api</string>
@@ -295,15 +295,11 @@
     </entry>
     <entry>
       <string>script-security</string>
-      <string>1.70</string>
+      <string>1.71</string>
     </entry>
     <entry>
       <string>pipeline-model-declarative-agent</string>
       <string>1.1.1</string>
-    </entry>
-    <entry>
-      <string>localization-support</string>
-      <string>1.1</string>
     </entry>
     <entry>
       <string>branch-api</string>
@@ -314,12 +310,16 @@
       <string>0.22</string>
     </entry>
     <entry>
+      <string>localization-support</string>
+      <string>1.1</string>
+    </entry>
+    <entry>
       <string>Hudson core</string>
-      <string>2.220</string>
+      <string>2.227</string>
     </entry>
     <entry>
       <string>workflow-api</string>
-      <string>2.39</string>
+      <string>2.40</string>
     </entry>
   </plugins>
 </org.jvnet.hudson.plugins.thinbackup.backup.PluginList>
